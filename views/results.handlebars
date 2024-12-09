@@ -1,0 +1,22 @@
+<h2>Search Results</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Restaurant Name</th>
+            <th>Cuisine</th>
+            <th>Borough</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each restaurants}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{cuisine}}</td>
+            <td>{{borough}}</td>
+            <td>{{address.building}} {{address.street}}, {{address.zipcode}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+<a href="/form">Search Again</a>
